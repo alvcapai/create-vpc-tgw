@@ -17,9 +17,9 @@ locals {
   # }
 
   bits_ahead_subnet_hub = 1
-  hub_private_subnets   = ["subprhubcorpint", "subprhubcorpext"]
+  hub_private_subnets   = ["subnprhubcorpint", "subnprhubcorpext"]
 
-  tg_name-1 = "TG_${var.tg_name}_1"
+  tg_name-1 = "tgw${var.tg_name}"
   # tg_name-2 = "TG_${var.tg_name}_2"
 
 
