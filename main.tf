@@ -5,7 +5,7 @@ locals {
   address_vpc_hub_1 = {
     "${var.vpc_hub_1_zone_1}"   = ["${var.address_vpc_hub_1_1}"],
     "${var.vpc_hub_1_zone_2}"   = ["${var.address_vpc_hub_1_2}"],
-    "${var.vpc_hub_1_region}-3" = []
+    #"${var.vpc_hub_1_region}-3" = []
   }
 
   
