@@ -41,7 +41,7 @@ data "ibm_resource_group" "resource_group_networking" {
 /* Hub VPC */
 module "vpc_hub_1" {
   # é necessário alterar para repo local
-  source            = "https://github.com/alvcapai/ibmcloud-vpc"
+  source            = "github.com/alvcapai/ibmcloud-vpc"
   vpc_name          = var.vpc_hub_name_1
   rg_id             = data.ibm_resource_group.resource_group_networking.id
   vpc_subnet        = local.address_vpc_hub_1
