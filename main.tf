@@ -8,6 +8,8 @@ locals {
     "${var.vpc_hub_1_region}-3" = []
   }
 
+  
+
   # address_vpc_hub_2 = {
   #   "${var.vpc_hub_2_zone_1}"   = ["${var.address_vpc_hub_2_1}"],
   #   "${var.vpc_hub_2_zone_2}"   = ["${var.address_vpc_hub_2_2}"],
@@ -15,7 +17,7 @@ locals {
   # }
 
   bits_ahead_subnet_hub = 1
-  hub_private_subnets   = ["ibc-bsesnet-hubextsao-nprd", "ibc-bsesnet-hubintsao-nprd"]
+  hub_private_subnets   = ["subprhubcorpint", "subprhubcorpext"]
 
   tg_name-1 = "TG_${var.tg_name}_1"
   # tg_name-2 = "TG_${var.tg_name}_2"
